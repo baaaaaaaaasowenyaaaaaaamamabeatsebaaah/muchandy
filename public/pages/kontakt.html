@@ -1,0 +1,165 @@
+<div class="section">
+  <div class="w-layout-grid _2-spalten1">
+    <!-- Google Maps Embed -->
+    <div class="maps1 _100" style="text-align: center">
+      <div class="html-embed-6 w-embed w-iframe">
+        <iframe
+          class="cmplazyload"
+          data-cmp-vendor="s1104"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.3671708002507!2d11.558406676659523!3d48.14172617124399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75fa2f009bf5%3A0xb82d27ba69195669!2smucHANDY!5e0!3m2!1sde!2s!4v1686913791458!5m2!1sde!2s"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="div-block-wei flie-text zweitfarbe">
+      <h1 class="small-heading heading-1">Kontaktieren Sie uns</h1>
+
+      <h2 class="small-heading heading-1">Adresse</h2>
+      <div class="div-block-113 left">
+        <p class="adresse flie-text">
+          Direkt am Hauptbahnhof<br />mucHANDY<br />Luisenstr. 1<br />80333
+          München
+        </p>
+      </div>
+
+      <h2 class="small-heading heading-1">Telefon &amp; E-mail</h2>
+      <a href="tel:0176/88778877" class="link w-inline-block">
+        <p class="telefonnummer1 flie-text grey">Festnetz: 0176/88778877</p>
+      </a>
+      <a href="mailto:kontakt@muchandy.de" class="mail1 w-inline-block">
+        <p class="email flie-text grey">E-mail: kontakt@muchandy.de</p>
+      </a>
+
+      <!-- Contact Form -->
+      <div class="form-block-1 w-form">
+        <form
+          id="Kontaktformular"
+          name="wf-form-Kontaktformular"
+          data-name="Kontaktformular"
+          action="https://www.muchandy.de/formmail.php"
+          method="post"
+          class="form"
+        >
+          <h2 class="small-heading heading-1">Kontaktformular</h2>
+          <div class="form-text flie-text">
+            Die mit einem * markierten Felder sind Pflichtfelder
+          </div>
+
+          <input
+            class="text-field w-input"
+            maxlength="256"
+            name="name"
+            data-name="name"
+            placeholder="Name *"
+            type="text"
+            id="name"
+            required=""
+          />
+          <input
+            class="text-field w-input"
+            maxlength="256"
+            name="email"
+            data-name="email"
+            placeholder="E-Mail *"
+            type="email"
+            id="email"
+            required=""
+          />
+          <input
+            class="text-field w-input"
+            maxlength="256"
+            name="Telefonnummer"
+            data-name="Telefonnummer"
+            placeholder="Telefonnummer *"
+            type="tel"
+            id="Telefonnummer"
+            required=""
+          />
+          <input
+            class="text-area w-input"
+            maxlength="256"
+            name="Ihr-Anliegen"
+            data-name="Ihr Anliegen"
+            placeholder="Ihr Anliegen"
+            type="text"
+            id="Ihr-Anliegen"
+          />
+
+          <label class="w-checkbox checkbox-field">
+            <input
+              id="Datenschutz"
+              type="checkbox"
+              name="Datenschutz"
+              data-name="Datenschutz"
+              required=""
+              class="w-checkbox-input"
+            />
+            <span for="Datenschutz" class="form-text flie-text w-form-label">
+              *Ich habe die
+              <a
+                href="datenschutz.html"
+                class="link-formular farbe-der-headings"
+                >Datenschutzerklärung</a
+              >
+              zur Kenntnis genommen.<br />
+              Ich stimme zu, dass meine Angaben zur Kontaktaufnahme und für
+              Rückfragen dauerhaft gespeichert werden.
+            </span>
+          </label>
+
+          <input
+            type="submit"
+            data-wait="Einen Moment bitte..."
+            class="kontaktbutton flie-text highlights w-button"
+            value="Abschicken"
+          />
+
+          <div class="w-embed">
+            <input
+              type="hidden"
+              name="recipients"
+              value="kontakt@muchandy.de"
+            />
+            <input
+              type="hidden"
+              name="good_url"
+              value="https://www.muchandy.de/success.html"
+            />
+            <input type="hidden" name="mail_options" value="CharSet=UTF-8" />
+            <input
+              type="hidden"
+              name="bad_url"
+              value="FEHLERMEDLUNG.com.de.cz"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="Neues Kontaktformular eingegangen!"
+            />
+          </div>
+        </form>
+
+        <!-- Success and Fail Messages -->
+        <div class="w-form-done">
+          <div>
+            Danke für Ihre Meldung! Wir werden Ihr Anliegen möglichst bald
+            bearbeiten.
+          </div>
+        </div>
+        <div class="w-form-fail">
+          <div>
+            Oops! Etwas ist schiefgelaufen... Überprüfen Sie nochmal Ihre
+            Eingaben oder versuchen Sie es später erneut.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

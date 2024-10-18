@@ -8,7 +8,7 @@
     />
     <meta
       name="keywords"
-      content="Handy Reparatur München, iPhone Reparatur München, iPad Reparatur München, mucHANDY, Smartphone Reparatur, Handyreparatur München"
+      content="Handy Reparatur München, iPhone Reparatur München, iPad Reparatur München, mucHANDY, Smartphone Reparatur, Handyreparatur München, Schnellreparatur München"
     />
     <meta name="author" content="mucHANDY - Handy Reparatur München" />
     <meta property="og:type" content="website" />
@@ -23,10 +23,10 @@
     />
     <meta
       property="og:image"
-      content="https://www.muchandy.de/images/your-og-image.jpg"
+      content="https://www.muchandy.de/images/og-image.jpg"
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@yourTwitterHandle" />
+    <meta name="twitter:site" content="@muchandy" />
     <meta
       name="twitter:title"
       content="Handy, iPhone & iPad Reparatur in München | mucHANDY"
@@ -37,12 +37,12 @@
     />
     <meta
       name="twitter:image"
-      content="https://www.muchandy.de/images/your-twitter-image.jpg"
+      content="https://www.muchandy.de/images/twitter-image.jpg"
     />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Handy, iPhone &amp; iPad Reparatur in München | mucHANDY</title>
 
-    <!-- Inline critical CSS -->
+    <!-- Inline critical CSS for above-the-fold content -->
     <style>
       body,
       html {
@@ -50,11 +50,23 @@
         padding: 0;
         font-family: Arial, sans-serif;
       }
-      /* Add critical styles here for performance */
+      .main-section {
+        padding: 20px;
+        text-align: center;
+      }
+      .heading-1 {
+        font-size: 2rem;
+      }
+      .phone-icon {
+        max-width: 100px;
+        margin-bottom: 20px;
+      }
     </style>
 
-    <!-- Avoid duplicate content issues  -->
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://www.muchandy.de/" />
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link
@@ -64,7 +76,7 @@
       href="/apple-touch-icon.png"
     />
 
-    <!-- Lazy load the rest of CSS -->
+    <!-- Lazy load CSS -->
     <link
       rel="preload"
       href="/css/webflow.css"
@@ -79,81 +91,1104 @@
     />
     <link rel="stylesheet" href="/css/custom-styles.css" />
 
-    <!-- JavaScript deferred for faster page load -->
-    <script defer src="/js/main.js"></script>
+    <!-- Defer JavaScript -->
+    <script defer type="module" src="/js/api.js"></script>
+    <script defer type="module" src="/js/form.js"></script>
+    <script defer type="module" src="/js/app.js"></script>
+
+    <!-- Structured Data (Schema.org) for Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "mucHANDY",
+        "image": "https://www.muchandy.de/images/og-image.jpg",
+        "description": "Handy, iPhone & iPad Reparatur in München. Schneller Service direkt am Hauptbahnhof.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Luisenstr. 1",
+          "addressLocality": "München",
+          "postalCode": "80333",
+          "addressCountry": "DE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 48.144847,
+          "longitude": 11.558065
+        },
+        "telephone": "+49-176-88778877",
+        "priceRange": "$$",
+        "url": "https://www.muchandy.de"
+      }
+    </script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            'Exo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic',
+            'Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic',
+            'Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic',
+            'PT Sans:400,400italic,700,700italic',
+            'Droid Sans:400,700',
+            'Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic',
+            'Raleway:300,regular,500,600,700,800',
+            'Roboto:300,regular,500,700',
+            'Barlow:300,regular,500,600,700',
+            'Barlow Condensed:300,regular,500,600,700',
+            'Nunito:300,regular,600,700',
+            'Dosis:300,regular,500,600',
+            'Play:regular,700',
+            'Orbitron:regular,500,600,700',
+            'Poiret One:regular',
+            'Unica One:regular',
+            'Yeseva One:regular',
+            'Cinzel:regular',
+            'Cinzel:regular,700,900',
+            'Vast Shadow:regular',
+            'Source Serif Pro:regular,600,700',
+            'EB Garamond:regular,500,600,700,800',
+            'Tangerine:regular',
+            'Niconne:regular',
+            'Muli:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic',
+          ],
+        },
+      });
+    </script>
+    <script>
+      if (!('gdprAppliesGlobally' in window)) {
+        window.gdprAppliesGlobally = true;
+      }
+      if (!('cmp_id' in window) || window.cmp_id < 1) {
+        window.cmp_id = 0;
+      }
+      if (!('cmp_cdid' in window)) {
+        window.cmp_cdid = '3e43e77331a4e';
+      }
+      if (!('cmp_params' in window)) {
+        window.cmp_params = '';
+      }
+      if (!('cmp_host' in window)) {
+        window.cmp_host = 'b.delivery.consentmanager.net';
+      }
+      if (!('cmp_cdn' in window)) {
+        window.cmp_cdn = 'cdn.consentmanager.net';
+      }
+      if (!('cmp_proto' in window)) {
+        window.cmp_proto = 'https:';
+      }
+      if (!('cmp_codesrc' in window)) {
+        window.cmp_codesrc = '0';
+      }
+      window.cmp_getsupportedLangs = function () {
+        var b = [
+          'DE',
+          'EN',
+          'FR',
+          'IT',
+          'NO',
+          'DA',
+          'FI',
+          'ES',
+          'PT',
+          'RO',
+          'BG',
+          'ET',
+          'EL',
+          'GA',
+          'HR',
+          'LV',
+          'LT',
+          'MT',
+          'NL',
+          'PL',
+          'SV',
+          'SK',
+          'SL',
+          'CS',
+          'HU',
+          'RU',
+          'SR',
+          'ZH',
+          'TR',
+          'UK',
+          'AR',
+          'BS',
+        ];
+        if ('cmp_customlanguages' in window) {
+          for (var a = 0; a < window.cmp_customlanguages.length; a++) {
+            b.push(window.cmp_customlanguages[a].l.toUpperCase());
+          }
+        }
+        return b;
+      };
+      window.cmp_getRTLLangs = function () {
+        var a = ['AR'];
+        if ('cmp_customlanguages' in window) {
+          for (var b = 0; b < window.cmp_customlanguages.length; b++) {
+            if (
+              'r' in window.cmp_customlanguages[b] &&
+              window.cmp_customlanguages[b].r
+            ) {
+              a.push(window.cmp_customlanguages[b].l);
+            }
+          }
+        }
+        return a;
+      };
+      window.cmp_getlang = function (j) {
+        if (typeof j != 'boolean') {
+          j = true;
+        }
+        if (
+          j &&
+          typeof cmp_getlang.usedlang == 'string' &&
+          cmp_getlang.usedlang !== ''
+        ) {
+          return cmp_getlang.usedlang;
+        }
+        var g = window.cmp_getsupportedLangs();
+        var c = [];
+        var f = location.hash;
+        var e = location.search;
+        var a = 'languages' in navigator ? navigator.languages : [];
+        if (f.indexOf('cmplang=') != -1) {
+          c.push(f.substr(f.indexOf('cmplang=') + 8, 2).toUpperCase());
+        } else {
+          if (e.indexOf('cmplang=') != -1) {
+            c.push(e.substr(e.indexOf('cmplang=') + 8, 2).toUpperCase());
+          } else {
+            if ('cmp_setlang' in window && window.cmp_setlang != '') {
+              c.push(window.cmp_setlang.toUpperCase());
+            } else {
+              if (a.length > 0) {
+                for (var d = 0; d < a.length; d++) {
+                  c.push(a[d]);
+                }
+              }
+            }
+          }
+        }
+        if ('language' in navigator) {
+          c.push(navigator.language);
+        }
+        if ('userLanguage' in navigator) {
+          c.push(navigator.userLanguage);
+        }
+        var h = '';
+        for (var d = 0; d < c.length; d++) {
+          var b = c[d].toUpperCase();
+          if (g.indexOf(b) != -1) {
+            h = b;
+            break;
+          }
+          if (b.indexOf('-') != -1) {
+            b = b.substr(0, 2);
+          }
+          if (g.indexOf(b) != -1) {
+            h = b;
+            break;
+          }
+        }
+        if (
+          h == '' &&
+          typeof cmp_getlang.defaultlang == 'string' &&
+          cmp_getlang.defaultlang !== ''
+        ) {
+          return cmp_getlang.defaultlang;
+        } else {
+          if (h == '') {
+            h = 'EN';
+          }
+        }
+        h = h.toUpperCase();
+        return h;
+      };
+      (function () {
+        var y = document;
+        var z = y.getElementsByTagName;
+        var j = window;
+        var r = '';
+        var b = '_en';
+        if ('cmp_getlang' in j) {
+          r = j.cmp_getlang().toLowerCase();
+          if ('cmp_customlanguages' in j) {
+            var g = j.cmp_customlanguages;
+            for (var u = 0; u < g.length; u++) {
+              if (g[u].l.toLowerCase() == r) {
+                r = 'en';
+                break;
+              }
+            }
+          }
+          b = '_' + r;
+        }
+        function A(e, D) {
+          e += '=';
+          var d = '';
+          var m = e.length;
+          var i = location;
+          var E = i.hash;
+          var w = i.search;
+          var s = E.indexOf(e);
+          var C = w.indexOf(e);
+          if (s != -1) {
+            d = E.substring(s + m, 9999);
+          } else {
+            if (C != -1) {
+              d = w.substring(C + m, 9999);
+            } else {
+              return D;
+            }
+          }
+          var B = d.indexOf('&');
+          if (B != -1) {
+            d = d.substring(0, B);
+          }
+          return d;
+        }
+        var n = 'cmp_proto' in j ? j.cmp_proto : 'https:';
+        if (n != 'http:' && n != 'https:') {
+          n = 'https:';
+        }
+        var h = 'cmp_ref' in j ? j.cmp_ref : location.href;
+        if (h.length > 300) {
+          h = h.substring(0, 300);
+        }
+        var k = y.createElement('script');
+        k.setAttribute('data-cmp-ab', '1');
+        var c = A('cmpdesign', 'cmp_design' in j ? j.cmp_design : '');
+        var f = A(
+          'cmpregulationkey',
+          'cmp_regulationkey' in j ? j.cmp_regulationkey : ''
+        );
+        var v = A('cmpgppkey', 'cmp_gppkey' in j ? j.cmp_gppkey : '');
+        var p = A('cmpatt', 'cmp_att' in j ? j.cmp_att : '');
+        k.src =
+          n +
+          '//' +
+          j.cmp_host +
+          '/delivery/cmp.php?' +
+          ('cmp_id' in j && j.cmp_id > 0 ? 'id=' + j.cmp_id : '') +
+          ('cmp_cdid' in j ? '&cdid=' + j.cmp_cdid : '') +
+          '&h=' +
+          encodeURIComponent(h) +
+          (c != '' ? '&cmpdesign=' + encodeURIComponent(c) : '') +
+          (f != '' ? '&cmpregulationkey=' + encodeURIComponent(f) : '') +
+          (v != '' ? '&cmpgppkey=' + encodeURIComponent(v) : '') +
+          (p != '' ? '&cmpatt=' + encodeURIComponent(p) : '') +
+          ('cmp_params' in j ? '&' + j.cmp_params : '') +
+          (y.cookie.length > 0 ? '&__cmpfcc=1' : '') +
+          '&l=' +
+          r.toLowerCase() +
+          '&o=' +
+          new Date().getTime();
+        k.type = 'text/javascript';
+        k.async = true;
+        if (y.currentScript && y.currentScript.parentElement) {
+          y.currentScript.parentElement.appendChild(k);
+        } else {
+          if (y.body) {
+            y.body.appendChild(k);
+          } else {
+            var q = ['body', 'div', 'span', 'script', 'head'];
+            for (var u = 0; u < q.length; u++) {
+              var x = z(q[u]);
+              if (x.length > 0) {
+                x[0].appendChild(k);
+                break;
+              }
+            }
+          }
+        }
+        var o = 'js';
+        var t =
+          A(
+            'cmpdebugunminimized',
+            'cmpdebugunminimized' in j ? j.cmpdebugunminimized : 0
+          ) > 0
+            ? ''
+            : '.min';
+        var a = A(
+          'cmpdebugcoverage',
+          'cmp_debugcoverage' in j ? j.cmp_debugcoverage : ''
+        );
+        if (a == '1') {
+          o = 'instrumented';
+          t = '';
+        }
+        var k = y.createElement('script');
+        k.src =
+          n + '//' + j.cmp_cdn + '/delivery/' + o + '/cmp' + b + t + '.js';
+        k.type = 'text/javascript';
+        k.setAttribute('data-cmp-ab', '1');
+        k.async = true;
+        if (y.currentScript && y.currentScript.parentElement) {
+          y.currentScript.parentElement.appendChild(k);
+        } else {
+          if (y.body) {
+            y.body.appendChild(k);
+          } else {
+            var x = z('body');
+            if (x.length == 0) {
+              x = z('div');
+            }
+            if (x.length == 0) {
+              x = z('span');
+            }
+            if (x.length == 0) {
+              x = z('ins');
+            }
+            if (x.length == 0) {
+              x = z('script');
+            }
+            if (x.length == 0) {
+              x = z('head');
+            }
+            if (x.length > 0) {
+              x[0].appendChild(k);
+            }
+          }
+        }
+      })();
+      window.cmp_addFrame = function (b) {
+        if (!window.frames[b]) {
+          if (document.body) {
+            var a = document.createElement('iframe');
+            a.style.cssText = 'display:none';
+            if (
+              'cmp_cdn' in window &&
+              'cmp_ultrablocking' in window &&
+              window.cmp_ultrablocking > 0
+            ) {
+              a.src = '//' + window.cmp_cdn + '/delivery/empty.html';
+            }
+            a.name = b;
+            a.setAttribute('title', 'Intentionally hidden, please ignore');
+            a.setAttribute('role', 'none');
+            a.setAttribute('tabindex', '-1');
+            document.body.appendChild(a);
+          } else {
+            window.setTimeout(window.cmp_addFrame, 10, b);
+          }
+        }
+      };
+      window.cmp_rc = function (c, b) {
+        var j = document.cookie;
+        var g = '';
+        var e = 0;
+        var f = false;
+        while (j != '' && e < 100) {
+          e++;
+          while (j.substr(0, 1) == ' ') {
+            j = j.substr(1, j.length);
+          }
+          var h = j.substring(0, j.indexOf('='));
+          if (j.indexOf(';') != -1) {
+            var k = j.substring(j.indexOf('=') + 1, j.indexOf(';'));
+          } else {
+            var k = j.substr(j.indexOf('=') + 1, j.length);
+          }
+          if (c == h) {
+            g = k;
+            f = true;
+          }
+          var d = j.indexOf(';') + 1;
+          if (d == 0) {
+            d = j.length;
+          }
+          j = j.substring(d, j.length);
+        }
+        if (!f && typeof b == 'string') {
+          g = b;
+        }
+        return g;
+      };
+      window.cmp_stub = function () {
+        var a = arguments;
+        __cmp.a = __cmp.a || [];
+        if (!a.length) {
+          return __cmp.a;
+        } else {
+          if (a[0] === 'ping') {
+            if (a[1] === 2) {
+              a[2](
+                {
+                  gdprApplies: gdprAppliesGlobally,
+                  cmpLoaded: false,
+                  cmpStatus: 'stub',
+                  displayStatus: 'hidden',
+                  apiVersion: '2.2',
+                  cmpId: 31,
+                },
+                true
+              );
+            } else {
+              a[2](false, true);
+            }
+          } else {
+            if (a[0] === 'getUSPData') {
+              a[2](
+                {
+                  version: 1,
+                  uspString: window.cmp_rc('__cmpccpausps', '1---'),
+                },
+                true
+              );
+            } else {
+              if (a[0] === 'getTCData') {
+                __cmp.a.push([].slice.apply(a));
+              } else {
+                if (
+                  a[0] === 'addEventListener' ||
+                  a[0] === 'removeEventListener'
+                ) {
+                  __cmp.a.push([].slice.apply(a));
+                } else {
+                  if (a.length == 4 && a[3] === false) {
+                    a[2]({}, false);
+                  } else {
+                    __cmp.a.push([].slice.apply(a));
+                  }
+                }
+              }
+            }
+          }
+        }
+      };
+      window.cmp_gpp_ping = function () {
+        return {
+          gppVersion: '1.1',
+          cmpStatus: 'stub',
+          cmpDisplayStatus: 'hidden',
+          signalStatus: 'not ready',
+          supportedAPIs: [
+            '5:tcfcav1',
+            '7:usnat',
+            '8:usca',
+            '9:usva',
+            '10:usco',
+            '11:usut',
+            '12:usct',
+          ],
+          cmpId: 31,
+          sectionList: [],
+          applicableSections: [0],
+          gppString: '',
+          parsedSections: {},
+        };
+      };
+      window.cmp_gppstub = function () {
+        var c = arguments;
+        __gpp.q = __gpp.q || [];
+        if (!c.length) {
+          return __gpp.q;
+        }
+        var h = c[0];
+        var g = c.length > 1 ? c[1] : null;
+        var f = c.length > 2 ? c[2] : null;
+        var a = null;
+        var j = false;
+        if (h === 'ping') {
+          a = window.cmp_gpp_ping();
+          j = true;
+        } else {
+          if (h === 'addEventListener') {
+            __gpp.e = __gpp.e || [];
+            if (!('lastId' in __gpp)) {
+              __gpp.lastId = 0;
+            }
+            __gpp.lastId++;
+            var d = __gpp.lastId;
+            __gpp.e.push({ id: d, callback: g });
+            a = {
+              eventName: 'listenerRegistered',
+              listenerId: d,
+              data: true,
+              pingData: window.cmp_gpp_ping(),
+            };
+            j = true;
+          } else {
+            if (h === 'removeEventListener') {
+              __gpp.e = __gpp.e || [];
+              a = false;
+              for (var e = 0; e < __gpp.e.length; e++) {
+                if (__gpp.e[e].id == f) {
+                  __gpp.e[e].splice(e, 1);
+                  a = true;
+                  break;
+                }
+              }
+              j = true;
+            } else {
+              __gpp.q.push([].slice.apply(c));
+            }
+          }
+        }
+        if (a !== null && typeof g === 'function') {
+          g(a, j);
+        }
+      };
+      window.cmp_msghandler = function (d) {
+        var a = typeof d.data === 'string';
+        try {
+          var c = a ? JSON.parse(d.data) : d.data;
+        } catch (f) {
+          var c = null;
+        }
+        if (typeof c === 'object' && c !== null && '__cmpCall' in c) {
+          var b = c.__cmpCall;
+          window.__cmp(b.command, b.parameter, function (h, g) {
+            var e = {
+              __cmpReturn: { returnValue: h, success: g, callId: b.callId },
+            };
+            d.source.postMessage(a ? JSON.stringify(e) : e, '*');
+          });
+        }
+        if (typeof c === 'object' && c !== null && '__uspapiCall' in c) {
+          var b = c.__uspapiCall;
+          window.__uspapi(b.command, b.version, function (h, g) {
+            var e = {
+              __uspapiReturn: { returnValue: h, success: g, callId: b.callId },
+            };
+            d.source.postMessage(a ? JSON.stringify(e) : e, '*');
+          });
+        }
+        if (typeof c === 'object' && c !== null && '__tcfapiCall' in c) {
+          var b = c.__tcfapiCall;
+          window.__tcfapi(
+            b.command,
+            b.version,
+            function (h, g) {
+              var e = {
+                __tcfapiReturn: {
+                  returnValue: h,
+                  success: g,
+                  callId: b.callId,
+                },
+              };
+              d.source.postMessage(a ? JSON.stringify(e) : e, '*');
+            },
+            b.parameter
+          );
+        }
+        if (typeof c === 'object' && c !== null && '__gppCall' in c) {
+          var b = c.__gppCall;
+          window.__gpp(
+            b.command,
+            function (h, g) {
+              var e = {
+                __gppReturn: { returnValue: h, success: g, callId: b.callId },
+              };
+              d.source.postMessage(a ? JSON.stringify(e) : e, '*');
+            },
+            'parameter' in b ? b.parameter : null,
+            'version' in b ? b.version : 1
+          );
+        }
+      };
+      window.cmp_setStub = function (a) {
+        if (
+          !(a in window) ||
+          (typeof window[a] !== 'function' &&
+            typeof window[a] !== 'object' &&
+            (typeof window[a] === 'undefined' || window[a] !== null))
+        ) {
+          window[a] = window.cmp_stub;
+          window[a].msgHandler = window.cmp_msghandler;
+          window.addEventListener('message', window.cmp_msghandler, false);
+        }
+      };
+      window.cmp_setGppStub = function (a) {
+        if (
+          !(a in window) ||
+          (typeof window[a] !== 'function' &&
+            typeof window[a] !== 'object' &&
+            (typeof window[a] === 'undefined' || window[a] !== null))
+        ) {
+          window[a] = window.cmp_gppstub;
+          window[a].msgHandler = window.cmp_msghandler;
+          window.addEventListener('message', window.cmp_msghandler, false);
+        }
+      };
+      window.cmp_addFrame('__cmpLocator');
+      if (!('cmp_disableusp' in window) || !window.cmp_disableusp) {
+        window.cmp_addFrame('__uspapiLocator');
+      }
+      if (!('cmp_disabletcf' in window) || !window.cmp_disabletcf) {
+        window.cmp_addFrame('__tcfapiLocator');
+      }
+      if (!('cmp_disablegpp' in window) || !window.cmp_disablegpp) {
+        window.cmp_addFrame('__gppLocator');
+      }
+      window.cmp_setStub('__cmp');
+      if (!('cmp_disabletcf' in window) || !window.cmp_disabletcf) {
+        window.cmp_setStub('__tcfapi');
+      }
+      if (!('cmp_disableusp' in window) || !window.cmp_disableusp) {
+        window.cmp_setStub('__uspapi');
+      }
+      if (!('cmp_disablegpp' in window) || !window.cmp_disablegpp) {
+        window.cmp_setGppStub('__gpp');
+      }
+    </script>
+    <style>
+      /*  styling scrollbars  */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        /* Scroll-bar base */
+        box-shadow: inset 0 0 5px #a5aaad;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        /* Scroll-bar */
+        background: #555555;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        /* hover effect for scroll-bar */
+        background: #000000;
+      }
+    </style>
   </head>
   <body>
-    <!-- Placeholder for Header -->
+    <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
 
     <!-- Main content -->
-    <div class="main-section">
-      <h1 class="big-heading heading-1">Reparatur & Tarifberatung<br /></h1>
-      <p class="paragraph-links flie-text">Direkt am Hauptbahnhof München</p>
-      <div class="divider-line highlights"></div>
+    <div id="content-placeholder"></div>
 
-      <!-- Add main page content here -->
-      <div class="w-layout-grid _3-column-grid">
-        <div class="card-wrap full">
-          <img
-            src="images/apple.webp"
-            loading="lazy"
-            alt="Vodafone"
-            class="phone-icon"
-          />
-          <h2 class="small-heading heading-1">Vodafone</h2>
-          <a
-            href="tarifberatung-2/vodaphone.html"
-            class="kontaktbutton flie-text highlights w-button"
-            >Mehr erfahren</a
-          >
-        </div>
-        <div class="card-wrap full">
-          <img
-            src="images/mobile-phone-popular-model-samsung-galaxy-note-2.webp"
-            loading="lazy"
-            alt="Telekom"
-            class="phone-icon"
-          />
-          <h2 class="small-heading heading-1">Telekom</h2>
-          <a
-            href="tarifberatung-2/telekom.html"
-            class="kontaktbutton flie-text highlights w-button"
-            >Mehr erfahren</a
-          >
-        </div>
-        <div class="card-wrap full">
-          <img
-            src="images/mobile-phone-popular-model-sony-xperia-z-ultra.webp"
-            loading="lazy"
-            alt="O2"
-            class="phone-icon"
-          />
-          <h2 class="small-heading heading-1">O2</h2>
-          <a
-            href="tarifberatung-2/o2.html"
-            class="kontaktbutton flie-text highlights w-button"
-            >Mehr erfahren</a
-          >
-        </div>
-      </div>
-    </div>
-
-    <!-- Placeholder for Footer -->
+    <!-- Footer Placeholder -->
     <div id="footer-placeholder"></div>
 
     <noscript>
       <div>
         <!-- Static fallback for SEO -->
-        <header>
-          <nav>Static Header Navigation</nav>
+        <header class="navbar1">
+          <div class="div-block-170">
+            <div class="kontakt-info-navbar">
+              <p class="paragraph-links flie-text no-margin">
+                Reparatur &amp; Tarifberatung
+              </p>
+              <a
+                href="tel:0176/88778877"
+                class="kontakt-info-div w-inline-block"
+                aria-label="Telefonnummer für Reparatur und Tarifberatung"
+              >
+                <img
+                  src="images/telephone-call.webp"
+                  loading="lazy"
+                  alt="Telefon"
+                  class="small-icon invert big"
+                />
+                <p class="paragraph-links flie-text no-margin">0176/88778877</p>
+                <!-- Removed Lottie animation if not necessary -->
+              </a>
+            </div>
+          </div>
+
+          <div class="nav">
+            <a
+              href="index.html"
+              aria-current="page"
+              class="logo w-inline-block"
+              aria-label="Zur Startseite"
+            >
+              <h1 class="heading-logo">mucHANDY Logo</h1>
+              <img
+                src="images/attachment_2.webp"
+                width="126"
+                sizes="(max-width: 479px) 35vw, (max-width: 991px) 20vw, 10vw"
+                loading="lazy"
+                alt="mucHANDY Logo"
+                srcset="
+                  images/attachment_2-p-500.webp   500w,
+                  images/attachment_2-p-800.webp   800w,
+                  images/attachment_2-p-1080.webp 1080w,
+                  images/attachment_2.webp        1500w
+                "
+                class="logo-img"
+              />
+            </a>
+
+            <div class="navbar hauptfarbe navbar-2 w-nav" role="banner">
+              <nav role="navigation" class="nav-menu-3 w-nav-menu">
+                <!-- Main navigation items -->
+                <a
+                  href="termin-vereinbaren.html"
+                  class="nav-link-3 flie-text w-nav-link"
+                  aria-label="Termin vereinbaren"
+                >
+                  Termin vereinbaren
+                </a>
+
+                <!-- Reparatur wählen Dropdown -->
+                <div
+                  class="navlink-dropdown w-dropdown"
+                  data-hover="true"
+                  data-delay="0"
+                >
+                  <div
+                    class="nav-link-3 flie-text dropdown w-dropdown-toggle"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <div class="w-icon-dropdown-toggle"></div>
+                    <a href="reparatur-wahlen.html" class="link-9"
+                      >Reparatur wählen</a
+                    >
+                  </div>
+                  <nav class="navlink-dropdown-list w-dropdown-list">
+                    <a
+                      href="reparatur-wahlen/iphone.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >iPhone</a
+                    >
+                    <a
+                      href="reparatur-wahlen/ipad.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >iPad</a
+                    >
+                    <a
+                      href="reparatur-wahlen/samsung.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >Samsung</a
+                    >
+                    <a
+                      href="reparatur-wahlen/google-pixel.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >Google</a
+                    >
+                    <a
+                      href="reparatur-wahlen/huawei.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >Huawei</a
+                    >
+                    <a
+                      href="reparatur-wahlen/xiaomi.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >Xiaomi</a
+                    >
+                    <a
+                      href="reparatur-wahlen/htc.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >HTC</a
+                    >
+                    <a
+                      href="reparatur-wahlen/sony.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >Sony</a
+                    >
+                    <a
+                      href="reparatur-wahlen/iwatch.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >iWatch</a
+                    >
+                    <a
+                      href="reparatur-wahlen/mainboard-logicboard-platinen-reparatur.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >Platinen/Logicboard Reparatur</a
+                    >
+                  </nav>
+                </div>
+
+                <!-- Tarifberatung Dropdown -->
+                <div
+                  class="navlink-dropdown w-dropdown"
+                  data-hover="true"
+                  data-delay="0"
+                >
+                  <div
+                    class="nav-link-3 flie-text dropdown w-dropdown-toggle"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <div class="w-icon-dropdown-toggle"></div>
+                    <a href="tarifberatung.html" class="link-9"
+                      >Tarifberatung</a
+                    >
+                  </div>
+                  <nav class="navlink-dropdown-list w-dropdown-list">
+                    <a
+                      href="tarifberatung-2/vodaphone.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >Vodafone</a
+                    >
+                    <a
+                      href="tarifberatung-2/telekom.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >Telekom</a
+                    >
+                    <a
+                      href="tarifberatung-2/o2.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >O2</a
+                    >
+                    <a
+                      href="tarifberatung-2/wertgarantie.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >Wertgarantie</a
+                    >
+                    <a
+                      href="tarifberatung-2/m-net.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >M-Net</a
+                    >
+                  </nav>
+                </div>
+
+                <!-- Kontakt Dropdown -->
+                <div
+                  class="navlink-dropdown w-dropdown"
+                  data-hover="true"
+                  data-delay="0"
+                >
+                  <div
+                    class="nav-link-3 flie-text dropdown w-dropdown-toggle"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <div class="w-icon-dropdown-toggle"></div>
+                    <a href="kontakt.html" class="link-9">Kontakt</a>
+                  </div>
+                  <nav class="navlink-dropdown-list w-dropdown-list">
+                    <a
+                      href="partner.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >Partner</a
+                    >
+                  </nav>
+                </div>
+
+                <!-- Anfahrt Link -->
+                <a
+                  href="anfahrt.html"
+                  class="nav-link-3 flie-text w-nav-link"
+                  aria-label="Anfahrt"
+                  >Anfahrt</a
+                >
+
+                <!-- Shop Dropdown -->
+                <div
+                  class="navlink-dropdown w-dropdown"
+                  data-hover="true"
+                  data-delay="0"
+                >
+                  <div
+                    class="nav-link-3 flie-text dropdown w-dropdown-toggle"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <div class="w-icon-dropdown-toggle"></div>
+                    <a href="leistungen.html" class="link-10">Shop</a>
+                  </div>
+                  <nav class="navlink-dropdown-list w-dropdown-list">
+                    <a
+                      href="#"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >Smartphones</a
+                    >
+                    <a
+                      href="#"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >Tablets</a
+                    >
+                    <a
+                      href="#"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >Laptops und Notebooks</a
+                    >
+                    <a
+                      href="#"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >Zubehör</a
+                    >
+                    <a
+                      href="shop/gebrauchte-smartphones-munchen.html"
+                      class="nav-link-3 flie-text submenu w-dropdown-link"
+                      >Gebrauchte Smartphones München</a
+                    >
+                  </nav>
+                </div>
+              </nav>
+
+              <!-- Mobile Menu Button -->
+              <div class="menu-button w-nav-button" aria-label="Menü öffnen">
+                <div class="icon-6 w-icon-nav-menu"></div>
+              </div>
+            </div>
+          </div>
         </header>
-        <footer>Static Footer Content</footer>
+
+        <footer class="footer1">
+          <div class="div-block-footer1 hauptfarbe">
+            <!-- Contact Section -->
+            <div class="div-mit-wei-er-schrift">
+              <h5 class="small-heading heading-1">Kontakt</h5>
+              <div class="_1 flie-text">
+                <a
+                  href="tel:0176/88778877"
+                  class="link w-inline-block"
+                  aria-label="Telefonnummer für Festnetz"
+                >
+                  <p class="telefonnummer1 flie-text">
+                    Festnetz: 0176/88778877
+                  </p>
+                </a>
+                <a
+                  href="mailto:kontakt@muchandy.de"
+                  class="link w-inline-block"
+                  aria-label="E-Mail an mucHANDY"
+                >
+                  <p class="email flie-text">E-Mail: kontakt@muchandy.de</p>
+                </a>
+              </div>
+            </div>
+
+            <!-- Address Section -->
+            <div class="div-mit-wei-er-schrift">
+              <h5 class="small-heading heading-1">Anschrift</h5>
+              <div class="_1 flie-text">
+                <div class="div-block-113">
+                  <p class="adresse flie-text">
+                    Direkt am Hauptbahnhof<br />mucHANDY<br />Luisenstr. 1<br />80333
+                    München
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Legal Section -->
+            <div class="div-mit-wei-er-schrift">
+              <h5 class="small-heading heading-1">Sonstiges</h5>
+              <p class="impdat1">
+                <a
+                  href="impressum.html"
+                  class="link-impdat flie-text"
+                  aria-label="Impressum"
+                  >Impressum</a
+                ><br />
+                <a
+                  href="datenschutz.html"
+                  class="link-impdat flie-text"
+                  aria-label="Datenschutz"
+                  >Datenschutz</a
+                >
+              </p>
+            </div>
+
+            <!-- Partner Logos Section -->
+            <div class="div-mit-wei-er-schrift">
+              <div class="w-layout-layout wf-layout-layout">
+                <div class="w-layout-cell">
+                  <a
+                    href="https://www.vodafone.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-inline-block"
+                  >
+                    <img
+                      src="images/unnamed__1_-removebg-preview.webp"
+                      loading="lazy"
+                      alt="Vodafone Logo"
+                      class="footer-icon"
+                    />
+                  </a>
+                </div>
+                <div class="w-layout-cell">
+                  <a
+                    href="https://www.telekom.de/start"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-inline-block"
+                  >
+                    <img
+                      src="images/download__1_-removebg-preview-1.webp"
+                      loading="lazy"
+                      alt="Telekom Logo"
+                      class="footer-icon"
+                    />
+                  </a>
+                </div>
+                <div class="w-layout-cell">
+                  <a
+                    href="https://www.o2.co.uk/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-inline-block"
+                  >
+                    <img
+                      src="images/download__2_-removebg-preview.webp"
+                      loading="lazy"
+                      alt="O2 Logo"
+                      class="footer-icon"
+                    />
+                  </a>
+                </div>
+                <div class="w-layout-cell">
+                  <a
+                    href="https://www.apple.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-inline-block"
+                  >
+                    <img
+                      src="images/apple-logo.webp"
+                      loading="lazy"
+                      alt="Apple Logo"
+                      class="footer-icon"
+                    />
+                  </a>
+                </div>
+                <div class="w-layout-cell">
+                  <a
+                    href="https://www.mi.com/de/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-inline-block"
+                  >
+                    <img
+                      src="images/xiaomi.webp"
+                      loading="lazy"
+                      alt="Xiaomi Logo"
+                      class="footer-icon"
+                    />
+                  </a>
+                </div>
+                <div class="w-layout-cell">
+                  <a
+                    href="https://www.huawei.com/en/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-inline-block"
+                  >
+                    <img
+                      src="images/huawei.webp"
+                      loading="lazy"
+                      alt="Huawei Logo"
+                      class="footer-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </noscript>
 
     <!-- Lazy load Header and Footer -->
     <script defer src="/js/header.js"></script>
     <script defer src="/js/footer.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"
+    ></script>
   </body>
 </html>
